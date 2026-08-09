@@ -1,0 +1,17 @@
+compute_environment: LOCAL_MACHINE
+distributed_type: MULTI_GPU
+
+num_machines: 1
+num_processes: 4
+machine_rank: 0
+same_network: true
+rdzv_backend: static
+
+# dynamo_config:
+#   dynamo_backend: INDUCTOR
+
+downcast_bf16: 'no'
+enable_cpu_affinity: false
+use_cpu: false
+main_training_function: main
+debug: false

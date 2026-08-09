@@ -1,0 +1,36 @@
+# accel_bf16.yaml
+compute_environment: LOCAL_MACHINE
+distributed_type: DEEPSPEED
+deepspeed_config:
+  deepspeed_config_file: configs/ds_config1.json
+
+
+num_machines: 1
+num_processes: 4 
+machine_rank: 0
+main_training_function: main
+rdzv_backend: static
+same_network: true
+dynamo_backend: "no"
+
+
+
+# compute_environment: LOCAL_MACHINE
+# distributed_type: DEEPSPEED
+
+# num_machines: 1
+# num_processes: 3
+# machine_rank: 0
+# same_network: true
+# rdzv_backend: static
+
+# # dynamo_config:
+# #   dynamo_backend: INDUCTOR
+
+# downcast_bf16: 'no'
+# enable_cpu_affinity: false
+# use_cpu: false
+# main_training_function: main
+# debug: false
+# deepspeed_config:
+#   deepspeed_config_file: configs/ds_config.json

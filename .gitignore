@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+logs/
+
+# Training outputs and model checkpoints
+runs/
+wandb/
+
+# Evaluation and detection outputs
+attack/results/
+eval_results/
+detect/results/
+
+# Generated detection datasets
+detect/data/
+
+# Hugging Face / dataset caches
+.cache/
+hf_cache/
+datasets/
+test/
+
+# Editor / OS noise
+.DS_Store
+
+# VSCode settings
+.vscode
+.codex

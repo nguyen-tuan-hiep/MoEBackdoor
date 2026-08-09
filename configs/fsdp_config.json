@@ -1,0 +1,25 @@
+{
+  "fsdp_min_num_params": 1000000,
+  "xla": false,
+
+  "sharding_strategy": "FULL_SHARD",
+  "use_orig_params": false,
+
+  "forward_prefetch": false,
+  "limit_all_gathers": true,
+  "sync_module_states": true,
+  "cpu_offload": false,
+
+  "activation_checkpointing": true,
+  "activation_cpu_offload": false,
+
+  "state_dict_type": "full",
+  "state_dict_config": {
+    "offload_to_cpu": true,
+    "rank0_only": true
+  },
+  "optim_state_dict_config": {
+    "offload_to_cpu": true,
+    "rank0_only": true
+  }
+}
