@@ -11,7 +11,7 @@ export TORCH_CUDA_ARCH_LIST="8.0"
 export PYTHONHASHSEED=0
 export CUBLAS_WORKSPACE_CONFIG=:4096:8
 
-PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="/home/thiep/projects/MoEBackdoor"
 
 MODEL="qwen"
 TASK="agnews"
@@ -20,7 +20,7 @@ SEEDS=(1 2 3 4)
 
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-103-v1"
-DATASET_PATH="${PROJECT_ROOT}/detect/data/${TASK}_wikitext_confident_clean_seed42"
+DATASET_PATH="${PROJECT_ROOT}/detect/data/${TASK}_wikitext_confident_clean_seed1"
 REFERENCE_SPLIT="validation"
 PROBE_SPLIT="test"
 

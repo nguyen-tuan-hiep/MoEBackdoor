@@ -11,7 +11,7 @@ export TORCH_CUDA_ARCH_LIST="8.0"
 export PYTHONHASHSEED=0
 export CUBLAS_WORKSPACE_CONFIG=:4096:8
 
-PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="/home/thiep/projects/MoEBackdoor"
 
 # =========================
 # Edit configuration here
